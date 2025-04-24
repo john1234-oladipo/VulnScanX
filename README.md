@@ -43,38 +43,53 @@ A lightweight vulnerability scanner that identifies security issues and generate
   ```
 
 ## Configuration
-# Edit config.yaml to:
+**Edit config.yaml to:**
  - Set default scan options
  - Add NVD API key (for CVE lookups)
  - Customize report templates
-yaml```
+```yaml
 # config.yaml example
 defaults:
   scan_type: quick
   report_format: html
 nvd_api_key: "your_api_key_here"
 ```
-
 ## Supported Checks
-Category	Examples
-Network	Open ports, outdated services
-Web	SQLi, XSS, misconfigurations
-System	Weak passwords, sudo rules
-CVEs	NVD database lookups
-Contributing
-Fork the repository
 
-Add new plugins in /plugins
-
-Submit a PR with tests
+| Category       | Examples                      |
+|----------------|-------------------------------|
+| Network        | Open ports, outdated services |
+| Web            | SQLi, XSS, misconfigurations  |
+| System         | Weak passwords, sudo rules    |
+| CVEs           | NVD database lookups          |
 
 ## Contributing
 1.  Fork the repository
 2.  Add new plugins in /plugins
-
-Submit a PR with tests
+3.  Submit a PR with tests
 
 See CONTRIBUTING.md for details.
 
 ## License
 MIT - See LICENSE
+
+## **Key Advantages**
+
+1. **Real-World Utility**:
+   - Unlike educational-only tools, this provides immediate value to sysadmins
+   - Focuses on *actionable* results with remediation steps
+
+2. **Learning Opportunities**:
+   - Network scanning (Nmap)
+   - API integration (NVD database)
+   - Secure coding practices
+   - Report generation (Jinja2/PDF)
+
+3. **Professional Presentation**:
+   - GitHub badges
+   - Clear sample output
+   - Modular architecture
+
+4. **Extensible**:
+   - Easy to add new scanners (create a new plugin file)
+   - Supports custom report templates
