@@ -8,6 +8,7 @@ class VulnScanner:
     def __init__(self, config_file="config.yaml"):
         with open(config_file) as f:
             self.config = yaml.safe_load(f)
+        self.plugins = [WebVulnerabilityScanner()]  # ← New but optional
         self.nm = nmap.PortScanner()
         self.cve_checker = CVEChecker(api_key=self.config.get('nvd_api_key'))
         
