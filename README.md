@@ -40,10 +40,11 @@ A lightweight vulnerability scanner that identifies security issues and generate
 ```bash
 git clone https://github.com/yourusername/vulnscanx.git
 cd vulnscanx
-pip install -r requirements.txt
+**Core only (no GUI):**
+  pip install -r requirements.txt --ignore-installed
 
-# For GUI support:
-pip install PyQt5
+**With GUI support:**
+  pip install -r requirements.txt
 ```
 
 ## Usage
