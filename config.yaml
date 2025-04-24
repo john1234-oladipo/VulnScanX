@@ -1,0 +1,13 @@
+defaults:
+  scan_type: quick
+  report_format: html
+  timeout: 10
+  
+nvd:
+  api_key: ""
+  rate_limit: 5
+  
+plugins:
+  web:
+    sql_test_payloads: ["' OR '1'='1", "UNION SELECT"]
+    xss_test_payloads: ["<script>alert(1)</script>"]
