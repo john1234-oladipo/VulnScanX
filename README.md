@@ -68,10 +68,10 @@ nvd_api_key: "your_api_key_here"
 2.  Add new plugins in /plugins
 3.  Submit a PR with tests
 
-See CONTRIBUTING.md for details.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ## License
-MIT - See LICENSE
+MIT - See [MIT License](LICENSE)
 
 ## **Key Advantages**
 
