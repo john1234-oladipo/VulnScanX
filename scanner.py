@@ -28,6 +28,9 @@ class VulnScanner:
             results["findings"].extend(self._check_cves(results["findings"]))
             
         return results
+
+    def get_nmap_version(self):
+        return self.nm.nmap_version()  # New helper method
     
     def _check_cves(self, findings):
         cve_results = []
