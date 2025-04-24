@@ -1,7 +1,16 @@
+# Core Dependencies
 nmap==3.0.1
-requests==2.28.1
 python-nmap==0.7.1
+requests==2.28.1
 pyyaml==6.0
+
+# Reporting
 jinja2==3.1.2
 weasyprint==57.0
+
+# Web Scanning
 beautifulsoup4==4.11.1
+
+# GUI Support (Optional)
+pyqt5==5.15.9
+qt-material==2.14
