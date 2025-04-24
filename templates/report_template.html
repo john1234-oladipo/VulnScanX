@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VulnScanX Report - {{ target }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .critical { color: red; }
+        .high { color: orange; }
+        .medium { color: #CCCC00; }
+        .low { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Vulnerability Report for {{ target }}</h1>
+    <p>Generated on {{ scan_date }}</p>
+    
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Risk</th>
+            <th>Remediation</th>
+        </tr>
+        {% for finding in findings %}
+        <tr class="{{ finding.risk.lower() }}">
+            <td>{{ finding.id }}</td>
+            <td>{{ finding.type }}</td>
+            <td>{{ finding.description }}</td>
+            <td>{{ finding.risk }}</td>
+            <td>{{ finding.fix }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
