@@ -6,6 +6,7 @@ defaults:
 nvd:
   api_key: ""
   rate_limit: 5
+  cache_ttl: 3600  # ← New but optional
   
 plugins:
   web:
