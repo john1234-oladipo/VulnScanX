@@ -38,7 +38,7 @@ A lightweight vulnerability scanner that identifies security issues and generate
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/vulnscanx.git
+git clone https://github.com/john1234-oladipo/vulnscanx.git
 cd vulnscanx
 # Core only (no GUI):
   pip install -r requirements.txt --ignore-installed
